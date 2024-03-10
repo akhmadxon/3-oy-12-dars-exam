@@ -1,5 +1,4 @@
-@import url(../header/nav/navbar.css);
-
+@import url(./nav/navbar.css);
 @mixin text ($f-size,$f-family,$l-height){
 	font-size: $f-size;
 	font-family: $f-family;

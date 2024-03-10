@@ -26,7 +26,7 @@
 	background-color: #1F2E35;
 	.nav-btn1{
 		@include btn-change(9px 24px);
-		@include text(16px,"poppins",24px);
+		@include text(16px,24px);
 		@extend %btn-style;
 		background-color: transparent;
 		border: 1px solid #BCD0E5;
@@ -35,7 +35,7 @@
 	}
 	.nav-btn2{
 		@include btn-change(9px 24px);
-		@include text(16px,"poppins",24px);
+		@include text(16px,24px);
 		@extend %btn-style;
 		background-color: #02897A;
 		border: 1px solid #02897A;
@@ -44,7 +44,7 @@
 	}
 	.header-btn-white{
 		@include btn-change(11px 18px);
-		@include text(18px,"mont",22px);
+		@include text(18px,22px);
 		@extend %btn-style;
 		background-color: #02897A;
 		border: 1px solid #02897A;
@@ -53,7 +53,7 @@
 	}
 	.header-btn-blue{
 		@include btn-change(11px 18px);
-		@include text(18px,"mont",22px);
+		@include text(18px,22px);
 		@extend %btn-style;
 		background-color: #fff;
 		border: 1px solid #fff;
@@ -63,7 +63,7 @@
 }
 .main1-btn{
 	@include btn-change(11px 18px);
-	@include text(18px,"mont",22px);
+	@include text(18px,22px);
 	@extend %btn-style;
 	background-color: #02897A;
 	border: 1px solid #02897A;
@@ -72,7 +72,7 @@
 }
 .statistic-btn{
 	@include btn-change(10px 34px);
-	@include text(20px,"mont",30px);
+	@include text(20px,30px);
 	@extend %btn-style;
 	background-color: #fff;
 	border: 1px solid #fff;

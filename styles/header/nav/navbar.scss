@@ -4,70 +4,133 @@
 	line-height: $l-height;
 }
 nav{
-	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	display: grid;
-	grid-template-columns: 1fr 3fr;
-	align-items: center;
-	justify-content: space-between;
-	.navbar-header{
-		display: flex;
-		align-items: center;
-		gap: 16px;
-		img{
-			width: 40px;
-			height: 40px;
-		}
-		p{
-			@include text(30px,"poppins",28px);
-			color: #fff;
-			font-weight: 700;
-		}
-	}
+    width: 100%;
+    height: 80px;
+    background: #1F2E35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 140px;
+    position: sticky;
+    top: 0;
+    .nav-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        h2{
+            color: #FFF;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px;
+        }
+    }
+    .nav-img{
+        width: 40px;
+        height: 37px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .nav-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+    .nav-desc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        p{
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; 
+        }
+    }
+    .nav-btn-in{
+            padding: 10px 23px;
+            border-radius: 10px;
+            border: 1.5px solid #BCD0E5;
+            cursor: pointer;
+            background-color: #1F2E35;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        
+    }
+    .nav-btn-Up{
+            padding: 10px 23px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #02897A;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+    }
+    .nav-right-img{
+        width: 32px;
+        height: 32px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .nav-icon{
+        display: none;
+    }
 }
-.nav-items{
-	display: flex;
-	align-items: center;
-	gap: 25px;
-	justify-content: end;
-	span{
-		display: none;
-	}
-	ul{
-		display: flex;
-		align-items: center;
-		gap: 25px;
-		a{
-			@include text(16px,"poppins",28px);
-			color: #fff;
-			&:hover{
-				color: #02897A;
-			}
-		}
-	}
+@media (max-width: 1400px) {
+    nav{
+        padding: 18px 100px;
+    }
 }
-
 @media (max-width: 1200px) {
-	.nav-items{
-		ul{
-			li{
-				display: none;
-			}
-		}
-		button{
-			display: none;
-		}
-		.circle{
-			display: none;
-		}
-		span{
-			display: block;
-			font-size: 30px;
-			color: #fff;
-			&:hover{
-				color: #02897A;
-			}
-		}
-	}
+    nav{
+        padding: 18px 90px;
+        .nav-right{
+            display: none;
+        }
+        .nav-icon{
+            display: block;
+            color: #FFF;
+            font-size: 30px;
+        }
+    }
+}
+@media (max-width: 780px) {
+    nav{
+        padding: 18px 60px;
+        .nav-right{
+            display: none;
+        }
+        .nav-icon{
+            display: block;
+            color: #FFF;
+            font-size: 26px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    nav{
+        padding: 18px 40px;
+        .nav-right{
+            display: none;
+        }
+        .nav-icon{
+            display: block;
+            color: #FFF;
+            font-size: 24px;
+        }
+    }
 }
