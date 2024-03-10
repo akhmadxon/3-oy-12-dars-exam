@@ -1,0 +1,222 @@
+@mixin text ($f-size,$f-family,$l-height){
+	font-size: $f-size;
+	font-family: $f-family;
+	line-height: $l-height;
+}
+.main2{
+	width: 100%;
+	padding: 150px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	.main2-header{
+		max-width: 560px;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		h2{
+			@include text(34px,"poppins",51px);
+			color: #fff;
+			font-weight: 700;
+			text-align: center;
+		}
+		P{
+			@include text(18px,"poppins",27px);
+			color: #fff;
+			font-weight: 400;
+			text-align: center;
+		}
+	}
+}
+.main2-box{
+	max-width: 920px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	.line{
+		border: 1px solid #474747
+	}
+	.main2-box-item{
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+		p{
+			@include text(16px,"poppins", 24px);
+			color: #fff;
+			font-weight: 400;
+		}
+		.main2-box-desc{
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			span{
+				font-size: 18px;
+				color: #02897A;
+				cursor: pointer;
+			}
+			h3{
+				@include text(18px,"poppins", 27px);
+				color: #fff;
+				font-weight: 500;
+			}
+			h4{
+				@include text(18px,"poppins", 27px);
+				color: #22343D;
+				font-weight: 500;
+			}
+		}
+	}
+}
+.main2-statistic{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.main2-statistic-item{
+		max-width: 970px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 70px;
+		padding: 30px;
+		background-color: #02897A;
+		border-radius: 30px;
+		img{
+			max-width: 300px;
+		}
+		.main2-statistic-desc{
+			max-width: 510px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 50px;
+			h2{
+				@include text(32px,"poppins",48px);
+				color: #fff;
+				font-weight: 600;
+			}
+		}
+	}
+}.main1{
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+	background-color: #22343D;
+	.main1-header{
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		h3{
+			@include text(24px, "poppins", 36px);
+			font-weight: 600;
+			color: #fff;
+			text-align: center;
+		}
+		.main1-header-desc{
+			max-width: 810px;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			h2{
+				@include text(34px, "poppins", 51px);
+				font-weight: 700;
+				color: #fff;
+				text-align: center;
+			}
+			p{
+				@include text(18px, "poppins", 27px);
+				font-weight: 400;
+				color: #fff;
+				text-align: center;
+			}
+		}
+	}
+}
+.main1-box{
+	width: 100%;
+	padding: 150px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	h2{
+		@include text(34px, "poppins",51px);
+		color: #fff;
+	}
+	.main1-box-item{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 60px;
+		.main1-box-items{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap: 32px;
+				.main1-box-item1{
+					max-width: 533px;
+					display: flex;
+					flex-direction: column;
+					gap: 16px;
+					p{
+						@include text(16px,"poppins",28px);
+						font-weight: 400;
+						color: #fff;
+					}
+					.main1-item-header{
+						display: flex;
+						align-items: center;
+						gap: 14px;
+					}
+					img{
+						width: 50px;
+						height: 50px;
+					}
+					h3{
+						@include text(24px,"poppins",36px);
+						font-weight: 600;
+						color: #fff;
+					}
+				}
+			}
+		}
+}
+@media (max-width: 600px) {
+	.main1-box-item{
+		.amico{
+			width: 300px;
+		}
+	}
+}
+@media (max-width: 300px) {
+	.main1-box-item{
+		.amico{
+			width: 200px;
+		}
+	}
+}
+@media (max-width: 1130px) {
+	.main2-statistic-desc{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h2{
+			text-align: center;
+		}
+	}
+	.main2-statistic{
+		.main2-statistic-item{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 50px;
+		}
+	}
+}
